@@ -14,7 +14,12 @@
          <menus>
             <Menu text="Договоры">
                <items>
-                  <MenuItem text="Новый" />
+                        <Menu mnemonicParsing="false" text="Создать новый">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Юридические лица" />
+                              <MenuItem mnemonicParsing="false" text="Физические лица" />
+                          </items>
+                        </Menu>
                   <MenuItem text="Список договоров" />
                   <SeparatorMenuItem />
                   <MenuItem fx:id="exitFromApp" onAction="#handleExitAction" text="Выход" />
