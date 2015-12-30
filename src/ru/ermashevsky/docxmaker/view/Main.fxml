@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="800.0" maxWidth="1024.0" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ermashevsky.docxmaker.MainController">
+    <children>
+        <VBox id="vbox" prefHeight="50" prefWidth="1024" xmlns:fx="http://javafx.com/fxml">
+           <children>
+           <MenuBar fx:id="menuBar">
+         <menus>
+            <Menu text="Договоры">
+               <items>
+                  <MenuItem text="Новый" />
+                  <MenuItem text="Список договоров" />
+                  <SeparatorMenuItem />
+                  <MenuItem fx:id="exitFromApp" onAction="#handleExitAction" text="Выход" />
+               </items>
+            </Menu>
+            <Menu text="Настройка">
+               <items>
+                  <MenuItem text="Профиль пользователя" />
+               </items>
+            </Menu>
+            <Menu text="Помощь">
+               <items>
+                  <MenuItem disable="true" text="Поиск" />
+                  <MenuItem disable="true" text="Online документация" visible="true" />
+                  <SeparatorMenuItem />
+                  <MenuItem text="О программе" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+           </children>
+        </VBox>
+        
+        
+    </children>
+</AnchorPane>

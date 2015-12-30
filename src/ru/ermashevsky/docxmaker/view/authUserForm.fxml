@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ermashevsky.docxmaker.AuthUserFormController">
+    <children>
+        <Label layoutX="85.0" layoutY="78.0" text="Добро пожаловать">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="85.0" layoutY="124.0" text="Логин:" />
+        <Label layoutX="85.0" layoutY="152.0" text="Пароль:" />
+        <TextField layoutX="164.0" layoutY="119.0" fx:id="loginField"/>
+        <PasswordField layoutX="164.0" layoutY="147.0" fx:id="passwdField"/>
+        
+        <Button layoutX="273.0" fx:id="loginButton" layoutY="190.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Войти" />
+    </children>
+</AnchorPane>
