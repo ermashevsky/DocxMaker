@@ -45,7 +45,7 @@ public class AuthUserFormController implements Initializable {
         System.out.println("Welcome");
 
         try {
-            if (!loginField.getText().trim().isEmpty()) {
+            if (!loginField.getText().trim().isEmpty() && !passwdField.getText().trim().isEmpty()) {
                 Stage stage_login = (Stage) loginButton.getScene().getWindow();
                 stage_login.close();
 
