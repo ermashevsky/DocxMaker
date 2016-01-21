@@ -42,7 +42,6 @@ public class AuthUserFormController implements Initializable {
 
     @FXML
     private void handleButtonAction(ActionEvent event) {
-        System.out.println("Welcome");
 
         try {
             if (!loginField.getText().trim().isEmpty() && !passwdField.getText().trim().isEmpty()) {
@@ -54,13 +53,14 @@ public class AuthUserFormController implements Initializable {
                 Scene scene = new Scene(root);
 
                 Stage stage = new Stage();
-
+                
                 stage.setScene(scene);
                 stage.setTitle("Заполнитель договоров");
                 stage.setResizable(false);
                 stage.show();
+
             } else {
-                
+
                 Alert alert = new Alert(AlertType.WARNING);
                 alert.setTitle("Внимание");
                 alert.setHeaderText(null);
